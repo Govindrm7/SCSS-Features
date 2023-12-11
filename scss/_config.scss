@@ -1,0 +1,47 @@
+// $font-stack:Arial,
+// Helvetica,
+// sans-serif;
+
+// $primary-color:rgb(10, 10, 102);
+
+// $secondary-color:rgb(115, 209, 212);
+
+
+//custom-features
+$primary: #0BCEAF;
+$secondary: #a0b9b7;
+$light: #ffffff;
+$dark: #51d5e6;
+$color:#000;
+$font-stack: Roboto,
+sans-serif;
+
+$body-bg: $light;
+
+
+$body-color: $secondary;
+
+$headings-color: $dark;
+
+$display1-size: 10rem;
+
+$enable-responsive-font-sizes: true;
+
+
+//functions
+@function set-text-color($color) {
+    @if(lightness($color)>70) {
+        @return #000;
+    }
+
+    @else {
+        @return #fff;
+    }
+}
+
+//mixins
+
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}

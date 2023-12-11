@@ -1,0 +1,176 @@
+@import 'config';
+@import 'utilities';
+@import 'mobile';
+
+//placeholder selector 
+//vaariables 
+body {
+    
+    @include set-background($primary);
+    font-family: $font-stack;
+    color: #000;
+}
+
+h1,
+.font-weight-bolder {
+    font-weight: 900 !important;
+}
+
+h2,
+h3,
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+
+h4,
+h5 .font-weight-medium {
+    font-weight: 500 !important;
+}
+
+h6,
+.font-weight-normal {
+    font-weight: 400 !important;
+}
+
+.font-weight-thin {
+    font-weight: 100 !important;
+}
+
+.text-stroke-header {
+    -webkit-text-stroke: 3px $light;
+    color: transparent;
+}
+
+.btn {
+    padding: 10px 25px;
+    border-radius: 100px;
+    margin-left: auto;
+    text-decoration: none;
+
+
+}
+
+.navbar {
+    background-color: $secondary;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-color {
+    background-color: #070e2b;
+}
+
+.nav-text {
+    color: #fff;
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.navbar .btn {
+    margin-left: auto;
+    text-decoration: none;
+
+}
+
+.navbar .navbar-brand {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+.body-background {
+    background-color: $primary;
+
+}
+
+
+.header-bg {
+    padding: 40px 0;
+    padding: 40px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.container {
+    // background-color: $light;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.left-text {
+    flex: 1;
+    text-align: left;
+}
+
+.myimage-class {
+    flex: 1;
+    text-align: right;
+}
+
+.myimage-class img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.welcome-text {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-bottom: 0;
+    gap: 10px;
+    background-color: black;
+}
+
+.grid-item {
+    text-align: center;
+    overflow: hidden;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.footer-color {
+    background-color: $light;
+}
+
+.text-center {
+    text-align: center;
+}

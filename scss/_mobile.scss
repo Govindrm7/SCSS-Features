@@ -1,0 +1,14 @@
+//nesting & 
+//parent selector also (& extra feature)
+
+@media (max-width:1000px) {
+    #container {
+        height: 650px;
+
+        &-content {
+            text-align: center;
+
+        }
+    }
+
+}
